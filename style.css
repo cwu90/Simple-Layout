@@ -1,0 +1,213 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+p {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.bg-intro {
+  background-image: url(img/Dessert\ 1.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  height: 65vh;
+}
+
+.intro-text {
+  color: white;
+  margin: auto auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.btn {
+  appearance: none;
+  text-decoration: none;
+  background-color: #fafbfc;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0,
+    rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+  box-sizing: border-box;
+  color: #24292e;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 20px;
+  list-style: none;
+  padding: 6px 16px;
+  position: relative;
+  transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+  margin-top: 1.5rem;
+  /* user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  word-wrap: break-word; */
+}
+
+.btn:hover {
+  background-color: #f3f4f6;
+  transition-duration: 0.1s;
+}
+
+.btn:disabled {
+  background-color: #fafbfc;
+  border-color: rgba(27, 31, 35, 0.15);
+  color: #959da5;
+  cursor: default;
+}
+
+.btn:active {
+  background-color: #edeff2;
+  box-shadow: rgba(205, 207, 211, 0.2) 0 1px 0 inset;
+  transition: none 0s;
+}
+
+.btn:focus {
+  outline: 1px transparent;
+}
+
+.btn:before {
+  display: none;
+}
+
+.btn:-webkit-details-marker {
+  display: none;
+}
+
+.box-one {
+  padding-block: 3rem;
+}
+
+.context-one {
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.quote::before {
+  content: open-quote;
+}
+.quote::after {
+  content: close-quote;
+}
+
+.box-two {
+  padding-bottom: 3rem;
+  margin: 0 auto;
+}
+
+.context-two {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.picture-two {
+  width: 100%;
+  max-width: 500px;
+  min-height: 350px;
+  height: auto;
+  background-image: url(img/Dessert\ 2.jpg);
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+}
+
+.text-two {
+  margin: auto auto;
+  max-width: 500px;
+}
+
+.box-three {
+  padding-bottom: 3rem;
+  margin: 0 auto;
+}
+
+.context-three {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.picture-three {
+  width: 500px;
+  min-height: 350px;
+  background-image: url(img/Dessert\ 3.jpg);
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+}
+
+.text-three {
+  margin: auto auto;
+  max-width: 500px;
+}
+
+.box-four {
+  padding-bottom: 2.5rem;
+  background-color: rgb(238, 234, 234);
+}
+
+.content-four {
+  padding-block: 2.5rem;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+footer {
+  background-color: rgb(68, 68, 68);
+}
+
+.footer-info {
+  padding-block: 2.5rem;
+  text-align: center;
+  color: white;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#email {
+  padding: 8px;
+  border: 0;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+}
+
+@media (max-width: 31.25rem) {
+  .context-two {
+    flex-direction: column;
+  }
+  .picture-two {
+    height: auto;
+    width: 80vw;
+  }
+  .context-three {
+    flex-direction: column-reverse;
+  }
+  .picture-three {
+    height: auto;
+    width: 80vw;
+  }
+}
